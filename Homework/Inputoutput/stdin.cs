@@ -3,7 +3,10 @@ using static System.Console;
 using static System.Math;
 
 public class stdin {
-	public static void Main(string[] args) {
+	
+	public static void Main() {
+		WriteLine("");
+		WriteLine("Reading from standard input stream:");
 		char[] delimiters = {' ','\t','\n'};
 		var options = StringSplitOptions.RemoveEmptyEntries;
 		for(string line = ReadLine(); line != null; line = ReadLine()){
@@ -13,5 +16,6 @@ public class stdin {
 				WriteLine($"{x} {Sin(x)} {Cos(x)}");
             }
         }
+        WriteLine("");
 	}
 }
