@@ -8,4 +8,4 @@ passf.exe: passf.cs
 	mcs -target:exe $<
 
 clean:
-	rm -r passf.exe Out.txt
+	rm -r *.exe [Ou]ut.txt
