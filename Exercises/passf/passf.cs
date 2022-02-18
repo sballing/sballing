@@ -12,10 +12,9 @@ public class passf{
 	}
 
 	private static void make_table(Func<double,double> f, double a, double b, double dx) {
-		double i = a;
-		while (i < b) {
-			WriteLine($"x = {i}, sin(x) = {f(i)}");
-			i = i + dx;
+		while (a < b) {
+			WriteLine($"x = {a}, sin(x) = {f(a)}");
+			a += dx;
 		} 
 	}
 
