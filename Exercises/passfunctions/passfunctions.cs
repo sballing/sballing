@@ -13,7 +13,7 @@ public class passf{
 
 	private static void make_table(Func<double,double> f, double a, double b, double dx) {
 		while (a < b) {
-			WriteLine($"x = {a}, sin(x) = {f(a)}");
+			WriteLine($"{a}, {f(a)}");
 			a += dx;
 		} 
 	}

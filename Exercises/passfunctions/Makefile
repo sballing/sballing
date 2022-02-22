@@ -1,10 +1,10 @@
 all: Out.txt
 	cat Out.txt
 
-Out.txt: passf.exe
+Out.txt: passfunctions.exe
 	mono $< > $@
 
-passf.exe: passf.cs
+passfunctions.exe: passfunctions.cs
 	mcs -target:exe $<
 
 clean:
