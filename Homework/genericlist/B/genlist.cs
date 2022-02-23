@@ -22,5 +22,6 @@ public class genlist<T>{
 		for(int i=j; i<size; i++){
 				data[i] = data[i+1];
 		}
+		size--;
 	}
 }

@@ -7,7 +7,7 @@ public class main{
                 a.push(1);
                 a.push(2);
                 a.push(3);
-                for( a.start(); a.current != null; a.next()){
+                for(a.start(); a.current != null; a.next()){
                         WriteLine(a.current.item);
                 } 
         } 
