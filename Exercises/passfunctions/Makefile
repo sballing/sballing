@@ -1,11 +1,14 @@
 all: Out.txt
 	cat Out.txt
 
-Out.txt: passfunctions.exe
+Out.txt: main.exe
 	mono $< > $@
 
-passfunctions.exe: passfunctions.cs
-	mcs -target:exe $<
+main.exe: main.cs passf.dll
+	mcs -target:exe -out:$@ -reference:passf.dll $<
+
+passf.dll: passf.cs
+	mcs $< -target:library -out:passf.dll
 
 clean:
-	rm -r *.exe [Ou]ut.txt
+	rm -r *.exe *.dll [Ou]ut.txt

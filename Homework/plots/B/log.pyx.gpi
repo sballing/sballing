@@ -1,0 +1,11 @@
+\
+set terminal png ;\
+set output "lngamma.pyxplot.png" ;\
+set xlabel "$x$" ;\
+set ylabel "ln($\Gamma(x)$)" ;\
+set title "Ln of the Gamma function" ;\
+set grid ;\
+set key left top ;\
+plot [0:75] "out.lngamma.txt" index 0 using 1:2 with lines title "ln($\Gamma(x)$)",\
+"tab.lnfac.txt" using 1:2 with points pointtype 17 title "Tabulated data" \
+

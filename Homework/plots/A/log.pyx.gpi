@@ -1,0 +1,11 @@
+\
+set terminal png ;\
+set output "erf.pyxplot.png" ;\
+set xlabel "$x$" ;\
+set ylabel "erf($x$)" ;\
+set title "Error function" ;\
+set grid ;\
+set key left top ;\
+plot [-1:1] [-1:1] "out.erf.txt" index 0 using 1:2 with lines title "erf($x$)",\
+"tab.erf.txt" using 1:2 with points pointtype 17 title "Tabulated data" \
+
