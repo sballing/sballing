@@ -1,0 +1,11 @@
+set terminal pdf
+set output "exp_pyxplot.pdf"
+set size 7
+set key top left
+set xlabel "$x$"
+set ylabel "exp($x$)"
+set mtics 1
+set grid
+plot [][]\
+	"out.exp.txt" with lines title "exp($x$)"\
+	,"tab.exp.txt" with points pointtype 17 title "Table values"
