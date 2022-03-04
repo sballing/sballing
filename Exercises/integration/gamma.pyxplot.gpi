@@ -1,0 +1,8 @@
+set terminal png
+set out gamma.png
+set xlabel "$x$"
+set ylabel "$\Gamma(x)$"
+set key bottom right
+set grid
+set title "Error function using integral representation"
+plot "Out_gamma.txt" with lines title "$\Gamma(x)$"

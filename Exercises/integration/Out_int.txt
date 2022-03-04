@@ -1,0 +1,1 @@
+Numerical integration gives -3.99999970392108. Exact result is -4 for comparison.
