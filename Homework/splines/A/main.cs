@@ -15,8 +15,8 @@ public class main{
 
 		lspline s = new lspline(xs,ys);
 		for(double z=0; z<=6.4; z+=1.0/64){
-			double interp = s.linterp(z);
-			double integ = s.linterpInteg(z, -1);
+			double interp = s.lspline_eval(z);
+			double integ = s.integ(z, -1);
 			WriteLine($"{z} {interp} {integ}");
 		}
 	}

@@ -15,13 +15,13 @@ public class lspline{
 		y = ys;
 	}
 
-	public double linterp(double z){
+	public double lspline_eval(double z){
 		int idx=binsearch(x,z);
 		double dy=y[idx+1]-y[idx], dx=x[idx+1]-x[idx];
 		return y[idx]+dy/dx*(z-x[idx]);
 	}
 
-	public double linterpInteg(double z, double cst){
+	public double integ(double z, double cst){
 		double cumsum=0;
 		int idx=binsearch(x,z);
 		for(int i=0; i<=idx; i++){
