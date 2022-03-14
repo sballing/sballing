@@ -22,7 +22,7 @@ lngamma.pyxplot.png: out.lngamma.txt tab.lnfac.txt
 	set title "Ln of the Gamma function" ;\
 	set grid ;\
 	set key left top ;\
-	plot [0:75] "$<" index 0 using 1:2 with lines title "ln($$\Gamma(x)$$)",\
+	plot [0:6] "$<" index 0 using 1:2 with lines title "ln($$\Gamma(x)$$)",\
 	"tab.lnfac.txt" using 1:2 with points pointtype 17 title "Tabulated data" \
 	'| tee log.pyx.gpi | pyxplot
 

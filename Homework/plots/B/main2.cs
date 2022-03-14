@@ -4,12 +4,19 @@ using static System.Math;
 public class main{
 
 	public static void Main(){
-		for(double x=0.1; x<=77; x+=1.0/8) {
+		for(double x=0.1; x<=6; x+=1.0/16) {
 			WriteLine($"{x} {lngamma(x)}");
 		}
 	}
 
 	static double lngamma(double x){
-		return x*Log(x) - x - 1/2*Log(x) + 1/2*Log(2*PI) + 1/(12*x) - 1/(360*x*x*x) + 1/(1260*x*x*x*x*x);
+		if(x<0){
+			return Double.NaN;
+		}
+		if(x<9){
+			return lngamma(x+1) - Log(x); // Similar to the gamma-implementation
+		}
+		double loggamma=x*Log(x+1/(12*x-1/x/10))-x+Log(2*PI/x)/2; // Taken from other implementation
+		return loggamma;
 	}
 }
