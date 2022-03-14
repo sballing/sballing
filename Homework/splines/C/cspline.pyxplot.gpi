@@ -9,7 +9,8 @@ set grid
 interpolate spline f() "out.txt" index 0
 interpolate spline f2() "out.txt" index 2
 set title "Quadratic"
-plot [][]\
+set xrange [-5:5]
+plot \
 	"out.txt" index 2 using 1:2 with points pointtype 17 title "Data points"\
 	,"out.txt" index 3 using 1:2 with lines title "Quadratic interpolation"\
 	,f2(x) with lines linetype 2 title "Pyxplot spline routine"\
@@ -17,7 +18,8 @@ plot [][]\
 	,"out.txt" index 3 using 1:4 with lines title "Derivative"
 set origin 0,-10
 set title "Classic example"
-plot [][]\
+set xrange [-3.5:3.5]
+plot \
 	"out.txt" index 0 using 1:2 with points pointtype 17 title "Data points"\
 	,"out.txt" index 1 using 1:2 with lines title "Cubic interpolation"\
 	,f(x) with lines linetype 2 title "Pyxplot spline routine"
