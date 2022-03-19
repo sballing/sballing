@@ -1,0 +1,11 @@
+set terminal png
+set output "timing.png"
+set key top left
+set xlabel "$N$"
+set ylabel "$t$ [ms]"
+set grid
+f(x) = a*x*x*x+b
+fit f() "out.txt" index 0 using 1:2 via a,b
+plot [][]\
+	"out.txt" index 0 using 1:2 with points pointtype 17 title "Decomposition time", \
+	f(x) title "Fit to $f(n) = a \cdot n^3 + b$"
