@@ -22,7 +22,7 @@ public class lsfit{
 		for(int i=0; i<res.Length; i++){
 			res[i] = c[i];
 		}
-		return c;
+		return res;
 
 	}
 

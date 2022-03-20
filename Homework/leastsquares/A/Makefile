@@ -24,4 +24,4 @@ vector.dll: vector.cs
 	mcs $< -target:library
 
 clean:
-	rm -r *.dll *.exe *.txt
+	rm -r *.dll *.exe *.txt *.png
