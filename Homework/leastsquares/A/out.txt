@@ -1,0 +1,9 @@
+----------------------------------------------
+The fit parameters are 4.95112516950657 and -0.172070796448846
+This corresponds to a fitted lambda value of 0.172070796448846
+Hence, the half-life is Ln(2)/lambda = 4.02826740426001 days
+This does not agree very well with the modern table value of 3.6319 days (Wikipedia)
+----------------------------------------------
+A plot of the experimental data alongside a fit is made
+This can also be seen in this directory as best_fit.png
+----------------------------------------------

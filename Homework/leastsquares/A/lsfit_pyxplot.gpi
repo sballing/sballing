@@ -1,0 +1,9 @@
+set terminal png
+set output "best_fit.png"
+set key top right
+set xlabel "Time [days]"
+set ylabel "Activity [rel. units]"
+set grid
+plot [][]\
+	"data_points.txt" using 1:2:3 with yerrorbars pointtype 17 title "Datapoints", \
+	"best_fit.txt" using 1:2 with lines title "Best fit"
