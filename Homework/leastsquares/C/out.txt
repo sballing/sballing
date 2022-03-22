@@ -1,0 +1,5 @@
+----------------------------------------------
+A plot of the experimental data alongside a fit is made
+The uncertainty of the fit parameters is also illustrated
+This can be seen in this directory as best_fit_pm.png
+----------------------------------------------
