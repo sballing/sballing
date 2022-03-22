@@ -1,0 +1,15 @@
+----------------------------------------------
+Now the fit is carried out with the addition of the covariance-matrix
+The fit parameters remain 4.95112516950657 and -0.172070796448846
+The covariance-matrix is:
+
+   0.00101  -0.000108 
+ -0.000108   1.62e-05 
+
+Hence, lambda is fitted to a value of 0.172070796448846 +/- 0.00402918677701603
+This corresponds to a half-life of 4.02826740426001 +/- 0.0162306417595292 days
+And in conclusion, the modern table value of 3.6319 days (Wikipedia) is not within the uncertainties of the fit!
+----------------------------------------------
+A plot of the experimental data alongside a fit is made
+This can also be seen in this directory as best_fit.png
+----------------------------------------------
