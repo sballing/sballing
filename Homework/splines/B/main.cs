@@ -59,8 +59,9 @@ public class main{
 		WriteLine("\n");
 		for(double z=-3.5; z<=3.5; z+=1.0/32){
 			double interp = s4.qspline_eval(z);
-			WriteLine($"{z} {interp}");
+			double integ = s4.integ(z,0);
+			double deriv = s4.deriv(z);
+			WriteLine($"{z} {interp} {integ} {deriv}");
 		}
-
 	}
 }	

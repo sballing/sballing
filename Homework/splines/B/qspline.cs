@@ -64,9 +64,9 @@ public class qspline{
 	}
 
 	public double deriv(double z){
-	int idx=binsearch(x,z);
-	double dx=z-x[idx];
-	return b[idx]+2*dx*c[idx];
+		int idx=binsearch(x,z);
+		double dx=z-x[idx];
+		return b[idx]+2*dx*c[idx];
 	}
 
 }

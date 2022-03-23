@@ -30,4 +30,6 @@ set origin 10,-10
 set title "Classic example"
 plot [][]\
 	"out.txt" index 6 using 1:2 with points pointtype 17 title "Data points"\
-	,"out.txt" index 7 using 1:2 with lines title "Quadratic interpolation"
+	,"out.txt" index 7 using 1:2 with lines title "Quadratic interpolation"\
+	,"out.txt" index 7 using 1:3 with lines title "Integral"\
+	,"out.txt" index 7 using 1:4 with lines title "Derivative"
