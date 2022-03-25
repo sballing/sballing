@@ -1,0 +1,15 @@
+set terminal png
+set output "timing.png"
+set key top left
+set xlabel "$n$"
+set ylabel "$t$ [ms]"
+set grid
+f(x) = a*x*x*x+b
+g(x) = c*x*x*x+d
+fit f() "times.txt" index 0 using 1:2 via a,b
+fit g() "times.txt" index 0 using 1:3 via c,d
+plot [][]\
+	"times.txt" index 0 using 1:2 with points pointtype 17 title "Original routine", \
+	"times.txt" index 0 using 1:3 with points pointtype 17 title "Optimized routine", \
+	f(x) with color red title "Fit to $a \cdot n^3 + b$", \
+	g(x) with color black title "Fit to $a \cdot n^3 + b$"
