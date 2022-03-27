@@ -1,0 +1,13 @@
+set terminal png
+set output "hydrogen.png"
+set key out
+set xlabel "Radial distance [arb. units]"
+set ylabel "Wave function [arb. units]"
+set grid
+plot [0:20][]\
+	"solutions.txt" using 1:2 with lines color red title "$E_0$", \
+	"solutions.txt" using 1:3 with lines color blue title "$E_1$", \
+	"solutions.txt" using 1:4 with lines color green title "$E_2$", \
+	"analytical.txt" using 1:2 with lines color black linetype 2 title "$E_0$ (analytical)", \
+	"analytical.txt" using 1:3 with lines color grey linetype 2 title "$E_1$ (analytical)", \
+	"analytical.txt" using 1:4 with lines color brown linetype 2 title "$E_2$ (analytical)"

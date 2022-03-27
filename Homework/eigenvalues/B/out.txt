@@ -1,0 +1,24 @@
+----------------------------------------------
+Investigating the eigenvalue convergence with rmax
+The spacing dr is fixed to 0.2 Bohr radius
+The numerical eigenenergies are compared to analytical table values (in Hartree)
+The resulting energies can be seen in figure "rmax_conv.png"
+----------------------------------------------
+The problem converges faster for lower energies as expected
+Apparently, the energies have converged at rmax = 30 for the three lowest solutions
+----------------------------------------------
+Investigating the eigenvalue convergence with npoints
+The spacing dr is fixed to 0.2 Bohr radius
+The numerical eigenenergies are compared to analytical table values (in Hartree)
+The resulting energies can be seen in figure "npoints_conv.png"
+----------------------------------------------
+The problem converges faster for lower energies as expected
+Apparently, the energies have converged at npoints = 150 for the three lowest solutions
+----------------------------------------------
+Having invistigated the convergence, we would like to inspect the resulting wavefunctions
+This is done for rmax = 30, npoints = 150, dr = 0.2
+----------------------------------------------
+The resulting radial wavefunctions are computed
+The three lowest solutions are plotted in figure "hydrogen.png"
+The results agree very well with analytical expressions (taken from Griffiths)
+----------------------------------------------
