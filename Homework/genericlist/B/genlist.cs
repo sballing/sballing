@@ -8,7 +8,8 @@ public class genlist<T>{
 
 	public void push(T elem) { // Push element to list
 		if(size == capacity){
-			T[] newdata = new T[capacity*2];
+			capacity *= 2;
+			T[] newdata = new T[capacity];
 			for(int i = 0; i < size; i++) {
 				newdata[i] = data[i];
 			}
