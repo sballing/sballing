@@ -1,0 +1,5 @@
+--------------------------------------
+Solving the ODE from SciPy
+The path is stored in the genlists given as parameters
+The result is plotted in figure ode_test.png
+--------------------------------------
