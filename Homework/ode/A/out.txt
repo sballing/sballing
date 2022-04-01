@@ -1,0 +1,4 @@
+--------------------------------------
+Solving the ODE from SciPy
+The result is plotted in figure ode_test.png
+--------------------------------------

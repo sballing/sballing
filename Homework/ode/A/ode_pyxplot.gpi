@@ -1,0 +1,10 @@
+set terminal png
+set output "ode_test.png"
+set title "Numerical solution to differential equation"
+set key bottom right
+set xlabel "Time"
+set ylabel "Numerical solution"
+set grid
+plot [0:10][-5:4]\
+	"sol.txt" using 1:2 with lines color red title "$\theta(t)$", \
+	"sol.txt" using 1:3 with lines color blue title "$\omega(t)$"
