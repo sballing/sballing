@@ -1,0 +1,11 @@
+set terminal png
+set output "figure8.png"
+set title "Figure 8"
+set key bottom right
+set xlabel "$x$"
+set ylabel "$y$"
+set grid
+plot [][]\
+	"solution.txt" using 2:3 with lines linetype 1 color red title "Body 1", \
+	"solution.txt" using 6:7 with lines linetype 2 color blue title "Body 2", \
+	"solution.txt" using 10:11 with lines linetype 3 color green title "Body 3"

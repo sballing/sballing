@@ -1,0 +1,6 @@
+--------------------------------------
+Solving the 3-body gravitational problem using the implemented ODE-solver
+Initial values for the stable figure 8 solution was found at:
+http://www.artcompsci.org/msa/web/vol_1/v1_web/node45.html
+The result is plotted in figure figure8.png
+--------------------------------------
