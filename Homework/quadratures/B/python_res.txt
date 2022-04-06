@@ -1,0 +1,2 @@
+1/sqrt(x) - Python implementation: 1.9999999999999984. It took 231 iterations.
+log(x)/sqrt(x) - Python implementation: -4.000000000000085. It took 315 iterations.
