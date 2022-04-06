@@ -1,0 +1,10 @@
+set terminal png
+set out gamma.png
+set xlabel "$x$"
+set ylabel "$\Gamma(x)$"
+set key bottom right
+set grid
+set title "Error function using integral representation"
+plot [][]\
+	"gamma.txt" with lines title "$\Gamma(x)$" ,\
+	"tab.erf.txt" with points pointtype 17 title "Table values"
