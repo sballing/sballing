@@ -13,8 +13,8 @@ def f2(x):
 
 i = 0
 j = 0
-res1 = integrate.quad(f1, 0, 1)
-res2 = integrate.quad(f2, 0, 1)
+res1 = integrate.quad(f1, 0, 1, epsabs=0.001, epsrel=0.001)
+res2 = integrate.quad(f2, 0, 1, epsabs=0.001, epsrel=0.001)
 
 print("1/sqrt(x) - Python implementation: " + str(res1[0]) + ". It took " + str(i) + " iterations.")
 print("log(x)/sqrt(x) - Python implementation: " + str(res2[0]) + ". It took " + str(j) + " iterations.")
