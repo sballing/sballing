@@ -29,7 +29,7 @@ public class integrator{
 	}
 
 	public static double vt_quad(Func<double,double> f, double a, double b,
-		double delta=1e-6, double eps=1e-6, double f2=NaN, double f3=NaN){
+		double delta=0.001, double eps=0.001, double f2=NaN, double f3=NaN){
 
 		if(a == -1 && b == 1){
 			Func<double,double> f_new = (x => f(Cos(x))*Sin(x));
