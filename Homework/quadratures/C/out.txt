@@ -11,12 +11,12 @@ Evidently, the error is lower than the required eps and delta!
 Testing the implementation on infinite limits:
 
 Int e^(-x^2) from -inf to inf: 1.77268516356473 in 80 recursive calls (should be sqrt(pi) = 1.772)
-Int 1/x^2 from 1 to inf: 1 in 4 recursive calls (should be 1)
+Int (sin(x)/x)^2 from 0 to inf: 1.56297104708522 in 152 recursive calls (should be pi/2 = 1.571)
 Int 1/(1+x^2) from -inf to 0: 1.57087236410369 in 24 recursive calls (should be pi/2 = 1.571)
 ------------------------------------
 Testing the Python SciPy routine for comparison:
 
 exp(-x^2) - Python implementation: 1.7724538509067376. It took 150 iterations.
-1/x^2 - Python implementation: 1.0. It took 15 iterations.
+(sin(x)/x)^2 - Python implementation: 1.5708678849457791. It took 1215 iterations.
 1/(1+x^2) - Python implementation: 1.5707963268467782. It took 15 iterations.
 ------------------------------------

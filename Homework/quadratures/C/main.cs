@@ -29,16 +29,16 @@ public class main{
 		WriteLine("Testing the implementation on infinite limits:\n");
 		int i = 0, j = 0, k = 0;
 		Func<double,double> f5 = x => {i++; return Exp(-x*x);};
-		Func<double,double> f6 = x => {j++; return 1/(x*x);};
+		Func<double,double> f6 = x => {j++; return Pow(Sin(x)/x,2);};
 		Func<double,double> f7 = x => {k++; return 1/(1+x*x);};
 
 		(double res5, double err5) = integrator.quad(f5, NegativeInfinity, PositiveInfinity);
-		(double res6, double err6) = integrator.quad(f6, 1, PositiveInfinity);
+		(double res6, double err6) = integrator.quad(f6, 0, PositiveInfinity);
 		(double res7, double err7) = integrator.quad(f7, NegativeInfinity, 0);
 
 
 		WriteLine($"Int e^(-x^2) from -inf to inf: {res5} in {i} recursive calls (should be sqrt(pi) = 1.772)");
-		WriteLine($"Int 1/x^2 from 1 to inf: {res6} in {j} recursive calls (should be 1)");
+		WriteLine($"Int (sin(x)/x)^2 from 0 to inf: {res6} in {j} recursive calls (should be pi/2 = 1.571)");
 		WriteLine($"Int 1/(1+x^2) from -inf to 0: {res7} in {k} recursive calls (should be pi/2 = 1.571)");
 		WriteLine("------------------------------------");
 
