@@ -31,6 +31,8 @@ public class main{
 		var res3 = mcint.plainmc(f3, a3, b3, 50000);
 		WriteLine($"\tResult is {res3.Item1} and error is {res3.Item2}");
 		WriteLine("\tResult should be 1.393203");
+		WriteLine("----------------------------------------------------");
+
 	}
 
 }
