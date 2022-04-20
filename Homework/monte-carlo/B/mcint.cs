@@ -72,8 +72,7 @@ public class mcint{
 
 	}
 
-
-	/*public static double corput(int n, int Base){
+	public static double corput(int n, int Base){
 		double q = 0, bk = 1.0/Base;
 		while(n>0){
 			q += (n % Base)*bk;
@@ -82,21 +81,8 @@ public class mcint{
 		}
 
 		return q;
-	}*/
+	}
 
-	    static double corput(int n , int Base )
-    {
-        double q=0 , bk= 1.0/Base;
-
-        while ( n>0)
-        {
-            q += (n%Base)*bk ;
-            n /= Base;
-            bk /= Base;
-        }
-
-        return q;
-    }
 
 	public static double[] halton(int n, int d, int sec=0){
 		int[] Base = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67};
