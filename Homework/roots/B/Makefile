@@ -1,6 +1,10 @@
 all: out.txt
 	cat $<
 	make hydrogen.png
+	make convergence.png
+
+convergence.png: convergence_pyxplot.gpi convergence.txt
+	pyxplot $<
 
 hydrogen.png: hydrogen_pyxplot.gpi solution.txt
 	pyxplot $<

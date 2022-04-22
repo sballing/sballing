@@ -1,5 +1,10 @@
 ------------------------------------------------
-HelloWorld
---------------------------------------
-r_max was 8, and corresponding energy was -0.499975106667943
+Investigating the lowest energy solution for r_min = 1e-3, r_max = 8
+
+	The energy is estimated to be -0.499975126247985 Hartree
+	It should be 0.5 Hartree
+
+The corresponding radial wavefunction is plotted alongside the analytical solution
+These can be seen in file 'hydrogen.png'
 ------------------------------------------------
+Investigating the convergence of solution with respect to varying r_min and r_max
