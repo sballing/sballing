@@ -3,6 +3,9 @@ using static System.Math;
 public class roots{
 
 	public static vector newton(Func<vector,vector> f, vector x0, double eps = 1e-2){
+		for(int i=0; i<x0.size; i++){
+			if(x0[i] == 0){x0[i] = 1e-5;}
+		}
 
 		vector x = x0.copy();
 		int n = x.size;
