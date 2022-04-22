@@ -1,0 +1,17 @@
+set terminal png
+set output "hydrogen.png"
+set multiplot
+set title "Solution for $r_{max} = 8$"
+set key top right
+set xlabel "Radial distance [Bohr radii]"
+set ylabel "Wave function [arb. units]"
+set grid
+plot [][]\
+	"solution.txt" using 1:2 with lines color red title "Shooting method", \
+	"solution.txt" using 1:3 with lines linetype 2 color blue title "Analytical result"
+set origin 0,-8
+set title "Residual plot for $r_{max} = 8$"
+set xlabel "Radial distance [Bohr radii]"
+set ylabel "Residual [arb. units]"
+plot [][]\
+	"solution.txt" using 1:4 with lines color green title "Residual"
