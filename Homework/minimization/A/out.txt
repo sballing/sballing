@@ -1,0 +1,23 @@
+---------------------------------------------------
+Finding minimum of Rosenbrock's valley function:
+
+Start guess is (0,0)
+The minimum was determined to be
+
+	(0.999995308541915,0.99999043265302) in 6756 steps. 
+	Here f(x,y) = 2.54120631956353E-11
+
+	One minimum is at (1,1), where f(x,y) = 0
+
+---------------------------------------------------
+Finding a minimum of Himmelblau's function:
+
+Start guess is (1,1)
+The minimum was determined to be
+
+	(3.00000192952072,1.99999741165291) in 18 steps. 
+	Here f(x,y) = 1.51759615662706E-10
+
+	One minimum is at (3,2), where f(x,y) = 0
+
+---------------------------------------------------
