@@ -67,7 +67,7 @@ public class mini{
 
 			double u_Trans_y = u.dot(y); // u^T * y for scaling, eq. 18
 
-			if(Abs(u_Trans_y) < 1e-6){
+			if(Abs(u_Trans_y) > 1e-6){
 				B.update(u,u, 1/u_Trans_y); // Rank-1 update according to eq. 18
 			}
 			x = z;
