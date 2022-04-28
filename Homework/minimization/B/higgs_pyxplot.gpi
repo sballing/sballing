@@ -1,0 +1,10 @@
+set terminal png
+set output "higgs.png"
+set title "Investigating the Higgs boson"
+set key top right
+set xlabel "Energy [GeV]"
+set ylabel "Cross section [arb. units]"
+set grid
+plot [][]\
+	"data.txt" with errorbars color black title "Data points",\
+	"fit.txt" using 1:2 with lines color red title "Fit"
