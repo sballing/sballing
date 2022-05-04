@@ -1,0 +1,11 @@
+----------------------------------------------------------
+Now the implementation should support derivative and anti-derivative
+This will be tested on the same function as before
+	Cos(5*x-1)*Exp(-x^2)
+
+This is again done using a gaussian wavelet as the activation function.
+----------------------------------------------------------
+The artificial neural network succesfully interpolated the given function g(x)
+Furthermore, the derivative and anti-derivative was determined
+The resulting plot can be seen in 'interpolation.png'
+----------------------------------------------------------

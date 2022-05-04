@@ -1,0 +1,12 @@
+set terminal png
+set output "interpolation.png"
+set title "Interpolation of $g(x)$ using an artificial neural network"
+set key top right
+set xlabel "$x$"
+set ylabel "$g(x)$"
+set grid
+plot [][]\
+	"toPlot.txt" index 0 using 1:2 with points color black title "Tabulated points",\
+	"toPlot.txt" index 1 using 1:2 with lines color red title "Interpolation",\
+	"toPlot.txt" index 1 using 1:3 with lines color blue title "Derivative",\
+	"toPlot.txt" index 1 using 1:4 with lines color green title "Anti-derivative"
