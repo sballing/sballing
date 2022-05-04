@@ -1,0 +1,13 @@
+----------------------------------------------------------
+Testing the implemented artificial neural network
+Specifically, the routine is tested with regards to interpolation
+
+The function
+	g(x) = Cos(5*x-1)*Exp(-x^2)
+is interpolated
+
+This is done using a gaussian wavelet as the activation function.
+----------------------------------------------------------
+The artificial neural network succesfully interpolated the given function g(x)
+The resulting plot can be seen in 'interpolation.png'
+----------------------------------------------------------
