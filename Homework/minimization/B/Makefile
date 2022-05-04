@@ -1,8 +1,7 @@
-all: out.txt
+all: out.txt higgs.png
 	cat $<
-	make higgs.png
 
-higgs.png: higgs_pyxplot.gpi data.txt
+higgs.png: higgs_pyxplot.gpi out.txt data.txt
 	pyxplot $<
 
 out.txt: main.exe data.txt

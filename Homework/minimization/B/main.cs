@@ -35,42 +35,44 @@ public class main{
 		int i = 0;
 
 		string infile = "data.txt";
-        var instream =new System.IO.StreamReader(infile);
-        for(string line=instream.ReadLine();line!=null;line=instream.ReadLine()){
-                string[] words = line.Split(" ");
-                foreach(var word in words){
-					double val = double.Parse(word);
-					data.Add(val);
-					i++;
-                }
-        }
-        instream.Close();
-        Es = new List<double>();
-        Ss = new List<double>();
-        Us = new List<double>();
-        for(i=0; i<data.Count; i++){
-        	if(i%3 == 0){Es.Add(data[i]);}
-        	if(i%3 == 1){Ss.Add(data[i]);}
-        	if(i%3 == 2){Us.Add(data[i]);}
-        }
+        	var instream =new System.IO.StreamReader(infile);
+	        for(string line=instream.ReadLine();line!=null;line=instream.ReadLine()){
+	                string[] words = line.Split(" ");
+	                foreach(var word in words){
+				double val = double.Parse(word);
+				data.Add(val);
+				i++;
+                	}
+        	}
+        	instream.Close();
 
-        vector x0 = new double[3] {100, 1, 1};
-        WriteLine($"The initial guess is: ({x0[0]}, {x0[1]}, {x0[2]})");
-        var(x, steps) = mini.qnewton(chi2, x0, acc: 1e-4);
+	        Es = new List<double>();
+	        Ss = new List<double>();
+	        Us = new List<double>();
+	        for(i=0; i<data.Count; i++){
+	        	if(i%3 == 0){Es.Add(data[i]);}
+	        	if(i%3 == 1){Ss.Add(data[i]);}
+	        	if(i%3 == 2){Us.Add(data[i]);}
+	        }
 
-        double m = Abs(x[0]);
-        double gamma = Abs(x[1]);
-        double A = Abs(x[2]);
+	        vector x0 = new double[3] {120, 3, 6};
+	        WriteLine($"The initial guess is: ({x0[0]}, {x0[1]}, {x0[2]})");
+	        var(x, steps) = mini.qnewton(chi2, x0, acc: 1e-3);
 
-        WriteLine($"Using the minimization algorithm, it is found that");
-        WriteLine($"\n\tMass = {m}\n\tWidth = {gamma}\n\tAmplitude = {A}\n");
-        WriteLine($"The minimization was done in {steps} steps");
+	        double m = Abs(x[0]);
+	        double gamma = Abs(x[1]);
+	        double A = Abs(x[2]);
+
+	        WriteLine($"Using the minimization algorithm, it is found that");
+	        WriteLine($"\n\tMass = {m}\n\tWidth = {gamma}\n\tAmplitude = {A}\n");
+	        WriteLine($"The minimization was done in {steps} steps");
 
 		using(var outfile = new System.IO.StreamWriter("fit.txt")){
 			for(double e = 100; e <= 160; e+=1.0/64){
 				outfile.WriteLine($"{e} {A*BW(e, m, gamma)}");
 			}
 		}
+		
 		WriteLine("---------------------------------------------------");
 
 		WriteLine("The fitted function is plotted alongside the data points");

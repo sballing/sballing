@@ -1,5 +1,6 @@
 using System;
 using static System.Math;
+using static System.Console;
 public class mini{
 
 	public static vector gradient(Func<vector,double>f, vector x){
@@ -33,21 +34,24 @@ public class mini{
 		matrix B = new matrix(n,n);
 		B.set_unity();
 
-		while(steps < 9999){ // We allow no more than 10000 steps
+		while(acc < gx.norm() && steps < 10000){ // We allow no more than 10000 steps
 			steps++;
 			vector dx = -B*gx; // Eq. 6 of notes
 
-		if(dx.norm() < eps*x.norm()){ // Unsuccesful step
-			break;
+			if(dx.norm() < eps*x.norm()){ // Unsuccesful step
+				Error.WriteLine("uups...");
+				break;
 			}
-		if(dx.norm() < acc){ 		  // Unsuccesful step
-			break;
+			if(dx.norm() < acc){ 		  // Unsuccesful step
+				Error.WriteLine("uups...");
+				break;
 			}
 
 			vector z;
 
 			double fz, lambda = 1;
-			while(true){
+			
+				while(true){
 				z = x + dx*lambda;
 				fz = f(z);
 				if(fz < fx){
@@ -67,9 +71,11 @@ public class mini{
 
 			double u_Trans_y = u.dot(y); // u^T * y for scaling, eq. 18
 
-			if(Abs(u_Trans_y) < 1e-6){
+			if(Abs(u_Trans_y) > 1e-6){
 				B.update(u,u, 1/u_Trans_y); // Rank-1 update according to eq. 18
 			}
+			else{B.set_unity();}
+
 			x = z;
 			gx = gz;
 			fx = fz;

@@ -2,14 +2,14 @@
 The implemented minimization algorithm is used for investigating the Higgs boson
 In particular, the Breit-Wigner function is fitted
 This is done by minimizing the chi2 function
-The initial guess is: (100, 1, 1)
+The initial guess is: (120, 3, 6)
 Using the minimization algorithm, it is found that
 
-	Mass = 125.972063183011
-	Width = 2.09236265797558
-	Amplitude = 9.90627512683767
+	Mass = 125.972188031526
+	Width = 2.08633959776743
+	Amplitude = 9.87625743189838
 
-The minimization was done in 9999 steps
+The minimization was done in 29 steps
 ---------------------------------------------------
 The fitted function is plotted alongside the data points
 This can be seen in 'higgs.png'
