@@ -1,6 +1,5 @@
-all: out.txt
+all: out.txt ode_test.png
 	cat out.txt
-	make ode_test.png
 
 ode_test.png: ode_pyxplot.gpi sol.txt
 	pyxplot $<

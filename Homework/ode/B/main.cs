@@ -4,9 +4,12 @@ using static System.Math;
 public class main{
 	public static void Main(){
 		WriteLine("--------------------------------------");
-		WriteLine("Solving the ODE from SciPy");
+		WriteLine("The RK solver now checks the acceptence condition for");
+		WriteLine("every component of y and investigate the tolerance/error");
+		WriteLine("ratio also for every component\n");
+		WriteLine("Solving the ODE from SciPy as in exercise A");
 		WriteLine("The path is stored in the genlists given as parameters");
-		WriteLine("The result is plotted in figure ode_test.png");
+		WriteLine("The result is plotted in figure \'ode_test.png\'");
 		WriteLine("--------------------------------------");
 		double b=0.25, c=5.0;
 		Func<double,vector,vector> f = delegate(double t, vector y){

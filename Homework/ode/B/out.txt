@@ -1,5 +1,9 @@
 --------------------------------------
-Solving the ODE from SciPy
+The RK solver now checks the acceptence condition for
+every component of y and investigate the tolerance/error
+ratio also for every component
+
+Solving the ODE from SciPy as in exercise A
 The path is stored in the genlists given as parameters
-The result is plotted in figure ode_test.png
+The result is plotted in figure 'ode_test.png'
 --------------------------------------
