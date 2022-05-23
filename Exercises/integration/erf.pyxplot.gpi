@@ -1,0 +1,10 @@
+set terminal png
+set out erf.png
+set xlabel "$x$"
+set ylabel "erf($x$)"
+set key bottom right
+set grid
+set title "Error function using integral representation"
+plot [][]\
+	"erf.txt" with lines title "erf($x$)",\
+	"tab.erf.txt" with points pointtype 17 title "Table values"

@@ -9,6 +9,6 @@ Numerical integration gives
 Exact result is -4 for comparison.
 ----------------------------------------------------------
 Using the numerical integrator to implement the error function
-The resulting error function is plotted in 'gamma.png'
+The resulting error function is plotted in 'erf.png'
 The result is compared to table values
 ----------------------------------------------------------

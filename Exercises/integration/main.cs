@@ -18,12 +18,12 @@ public class main{
 		WriteLine("----------------------------------------------------------");
 
 		WriteLine("Using the numerical integrator to implement the error function");
-		using(var outfile = new System.IO.StreamWriter("gamma.txt")){
+		using(var outfile = new System.IO.StreamWriter("erf.txt")){
 			for(double x=-3; x<=3; x+=1.0/16){
 				outfile.WriteLine($"{x} {erf(x)}");
 			}
 		}
-		WriteLine("The resulting error function is plotted in \'gamma.png\'");
+		WriteLine("The resulting error function is plotted in \'erf.png\'");
 		WriteLine("The result is compared to table values");
 		WriteLine("----------------------------------------------------------");
 

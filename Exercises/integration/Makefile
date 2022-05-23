@@ -1,8 +1,8 @@
-all: Out.txt gamma.png
+all: Out.txt erf.png
 	cat $<
 
-gamma.png: gamma.pyxplot.gpi gamma.txt
-	pyxplot gamma.pyxplot.gpi
+erf.png: erf.pyxplot.gpi erf.txt
+	pyxplot erf.pyxplot.gpi
 
 Out.txt: main.exe
 	mono $< > $@
