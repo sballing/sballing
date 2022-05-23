@@ -14,11 +14,14 @@ public class file {
                 }
         var instream =new System.IO.StreamReader(infile);
         var outstream=new System.IO.StreamWriter(outfile);
-        outstream.WriteLine("Reading from input file:");
+        outstream.WriteLine("-------------------------------------------------");
+        outstream.WriteLine("Reading from input file and printing their cosine and sine:\n");
+        outstream.WriteLine("x\tsin(x)\t\t\tcos(x)\n");
         for(string line=instream.ReadLine();line!=null;line=instream.ReadLine()){
                 double x=double.Parse(line);
-                outstream.WriteLine($"{x} {Sin(x)} {Cos(x)}");
+                outstream.WriteLine($"{x}\t{Sin(x)}\t{Cos(x)}");
         }
+        outstream.WriteLine("-------------------------------------------------");
         instream.Close();
         outstream.Close();
 	return 0;
