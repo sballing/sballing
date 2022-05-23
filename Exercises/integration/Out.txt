@@ -1,0 +1,14 @@
+----------------------------------------------------------
+Testing the numerical integrator on a well-studied example
+We consider the integral of ln(x)/sqrt(x) from 0 to 1
+
+Numerical integration gives 
+
+	-3.99999970392108. 
+
+Exact result is -4 for comparison.
+----------------------------------------------------------
+Using the numerical integrator to implement the error function
+The resulting error function is plotted in 'gamma.png'
+The result is compared to table values
+----------------------------------------------------------
