@@ -10,6 +10,13 @@ Epsilon for float is 1.192093E-07
 ------------------------------------------------------
 sumA-1 = 0.000000e+000, should be 1.110223e-010
 sumB-1 = 1.110223e-010, should be 1.110223e-010
+
+The results are different for the following reason:
+When adding machine epsilon to a significantly
+larger number (1), C-sharp simply disregards
+the addition as negleglible (sumA). However,
+when machine epsilon is added to 0, it contributes
+so C-sharp cannot disregard it a negleglible (sumB).
 ------------------------------------------------------
 Testing the implemented approx method with a few examples
 1,2: False

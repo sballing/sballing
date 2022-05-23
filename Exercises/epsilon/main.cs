@@ -42,7 +42,13 @@ public class epsilon{
 		WriteLine($"sumA-1 = {sumA-1:e}, should be {n*tiny:e}");
 
 		for(int k=0;k<n;k++){sumB+=tiny;} sumB+=1;
-		WriteLine($"sumB-1 = {sumB-1:e}, should be {n*tiny:e}");
+		WriteLine($"sumB-1 = {sumB-1:e}, should be {n*tiny:e}\n");
+		WriteLine("The results are different for the following reason:");
+		WriteLine("When adding machine epsilon to a significantly");
+		WriteLine("larger number (1), C-sharp simply disregards");
+		WriteLine("the addition as negleglible (sumA). However,");
+		WriteLine("when machine epsilon is added to 0, it contributes");
+		WriteLine("so C-sharp cannot disregard it a negleglible (sumB).");
 
 		WriteLine("------------------------------------------------------");
 		WriteLine("Testing the implemented approx method with a few examples");
