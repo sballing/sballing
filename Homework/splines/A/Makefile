@@ -1,7 +1,7 @@
 all: out.txt linterp.png
 	cat $<
 
-linterp.png: linterp.gpi linterp.txt
+linterp.png: lspline.pyxplot.gpi linterp.txt
 	pyxplot $<
 
 out.txt: main.exe
