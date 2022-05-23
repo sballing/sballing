@@ -18,7 +18,7 @@ public class main{
 				Q[i,j] = num;
 			}
 		}
-		WriteLine("Randomly generated square matrix (8x8):");
+		WriteLine("Randomly generated square matrix A (8x8):");
 		A.print();
 		WriteLine("----------------------------------------------");
 		lineq.QRGSdecomp(Q,R);
