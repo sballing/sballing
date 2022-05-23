@@ -1,6 +1,5 @@
-all: out.txt
+all: out.txt timing.png
 	cat $<
-	make timing.png
 
 timing.png: timing_pyxplot.gpi times.txt
 	pyxplot $<

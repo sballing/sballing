@@ -100,6 +100,11 @@ public class main{
 		WriteLine("----------------------------------------------");
 		WriteLine("In conclusion: The optimized Jacobi EVD is succesful! :-)");
 
+		WriteLine("----------------------------------------------");
+		WriteLine("Both the original and optimized algorithm have been investigated with regards to time");
+		WriteLine("This can be seen in \'timing.png\' in this directory");
+		WriteLine("Evidently, both algorithms scale as O(n^3) as expected");
+		WriteLine("----------------------------------------------");
 
 	}
 }
