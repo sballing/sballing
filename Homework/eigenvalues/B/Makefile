@@ -1,8 +1,5 @@
-all: out.txt
+all: out.txt hydrogen.png rmax_conv.png npoints_conv.png
 	cat $<
-	make hydrogen.png
-	make rmax_conv.png
-	make npoints_conv.png
 
 rmax_conv.png: rmax_pyxplot.gpi conv_rmax.txt
 	pyxplot $<
