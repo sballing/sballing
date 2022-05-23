@@ -38,7 +38,7 @@ public class main{
 		WriteLine("This does not agree very well with the modern table value of 3.6319 days (Wikipedia)");
 		WriteLine("----------------------------------------------");
 		WriteLine("A plot of the experimental data alongside a fit is made");
-		WriteLine("This can also be seen in this directory as best_fit.png");
+		WriteLine("This can also be seen in this directory as \'best_fit.png\'");
 		WriteLine("----------------------------------------------");
 	}
 }
