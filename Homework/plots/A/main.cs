@@ -4,9 +4,16 @@ using static System.Math;
 public class main{
 
 	public static void Main(){
-		for(double x=-1; x<=1; x+=1.0/8) {
-			WriteLine($"{x} {erf(x)}");
+		WriteLine("---------------------------------------------------------------");
+		WriteLine("Computing the erf-function from the approximation given in exercise");
+		WriteLine("The result is plotted in \'erf.png\' alongside some table values");
+
+		using(var outfile = new System.IO.StreamWriter("erf.txt")){
+			for(double x=-1; x<=1; x+=1.0/8) {
+				outfile.WriteLine($"{x} {erf(x)}");
+			}
 		}
+		WriteLine("---------------------------------------------------------------");
 	}
 
 	static double erf(double x){

@@ -1,4 +1,7 @@
-erf.pyxplot.png: out.erf.txt tab.erf.txt
+all: out.txt erf.png
+	cat out.txt
+
+erf.png: erf.txt tab.erf.txt out.txt
 	echo '\
 	set terminal png ;\
 	set output "$@" ;\
@@ -11,7 +14,7 @@ erf.pyxplot.png: out.erf.txt tab.erf.txt
 	"tab.erf.txt" using 1:2 with points pointtype 17 title "Tabulated data" \
 	'| tee log.pyx.gpi | pyxplot
 
-out.erf.txt: main.exe
+out.txt: main.exe
 	mono $< > $@
 
 main.exe: main.cs

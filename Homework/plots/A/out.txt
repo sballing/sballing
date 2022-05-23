@@ -1,0 +1,4 @@
+---------------------------------------------------------------
+Computing the erf-function from the approximation given in exercise
+The result is plotted in 'erf.png' alongside some table values
+---------------------------------------------------------------
