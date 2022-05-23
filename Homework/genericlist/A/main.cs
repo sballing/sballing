@@ -7,12 +7,12 @@ public class main{
 			return 1;
 		}
 
-		WriteLine();
-		WriteLine("Testing that the input file can be read, parsed, stored in a genlist and printed in scientific format:");
-		WriteLine();
-		var reader = new System.IO.StreamReader(args[0]);
+		WriteLine("-------------------------------------------------------");
+		WriteLine("Testing that the input file can be read, parsed,");
+		WriteLine("and stored in a genlist and printed in scientific format:\n");
 
-		var list = new genlist<double[]>();
+		var reader = new System.IO.StreamReader(args[0]);
+		var list = new genlist<double[]>(); // Using the implemented genlist
 		char[] delimiters = {' ','\t'};
 		var options = StringSplitOptions.RemoveEmptyEntries;
 		for(string line = reader.ReadLine(); line!=null; line = reader.ReadLine()) { // Reading the numbers from input file
@@ -27,6 +27,7 @@ public class main{
 			foreach(var number in numbers)Write($"{number:e} ");
 			WriteLine();
         }
+        WriteLine("-------------------------------------------------------");
         return 0;
 	}
 }
