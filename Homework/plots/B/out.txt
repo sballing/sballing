@@ -1,9 +1,9 @@
 ---------------------------------------------------------
 Computing and plotting the gamma function
-The result can be seen in gamma.png
+The result can be seen in 'gamma.png'
 It is compared to table values (factorial)
 ---------------------------------------------------------
 Computing and plotting the ln(gamma) function
-The result can be seen in lngamma.png
+The result can be seen in 'lngamma.png'
 It is compared to table values
 ---------------------------------------------------------

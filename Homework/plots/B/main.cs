@@ -31,7 +31,7 @@ public class main{
 			}
 		}
 
-		WriteLine("The result can be seen in gamma.png");
+		WriteLine("The result can be seen in \'gamma.png\'");
 		WriteLine("It is compared to table values (factorial)");
 		WriteLine("---------------------------------------------------------");
 		
@@ -43,7 +43,7 @@ public class main{
 			}
 		}
 
-		WriteLine("The result can be seen in lngamma.png");
+		WriteLine("The result can be seen in \'lngamma.png\'");
 		WriteLine("It is compared to table values");
 		WriteLine("---------------------------------------------------------");
 

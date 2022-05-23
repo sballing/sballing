@@ -34,4 +34,4 @@ main.exe: main.cs
 	mcs $< -target:exe
 
 clean:
-	rm -r *.png log* [Oo]ut* *.exe
+	rm -r *.png log* [Oo]ut* *.exe gamma.txt lngamma.txt
