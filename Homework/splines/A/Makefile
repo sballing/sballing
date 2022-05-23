@@ -1,4 +1,7 @@
-linterp.png: linterp.gpi out.txt
+all: out.txt linterp.png
+	cat $<
+
+linterp.png: linterp.gpi linterp.txt
 	pyxplot $<
 
 out.txt: main.exe
@@ -11,4 +14,4 @@ lspline.dll: lspline.cs
 	mcs $< -target:library
 
 clean:
-	rm -r out.txt *.dll *.exe *.png
+	rm -r *.txt *.dll *.exe *.png
