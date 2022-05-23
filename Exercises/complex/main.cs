@@ -8,7 +8,7 @@ public class main {
 		WriteLine("-------------------------------------------------");
 		WriteLine("Testing the cmath class on some examples:");
 		WriteLine($"sqrt(-1) = {cmath.sqrt(minusOne)} (should be 0 + 1i)");
-		WriteLine($"sqrt(i) = {cmath.sqrt(cmath.I)} (should be 0.7071 + 0i)");
+		WriteLine($"sqrt(i) = {cmath.sqrt(cmath.I)} (should be 0.7071 + 0.7071i)");
 		WriteLine($"e^i = {cmath.exp(cmath.I)} (should be 0.5403 + 0.8415i)");
 		WriteLine($"e^i*pi = {cmath.exp(cmath.I*System.Math.PI)} (should be -1 + 0i)");
 		WriteLine($"i^i = {cmath.pow(cmath.I, cmath.I)} (should be 0.2079 + 0i)");
