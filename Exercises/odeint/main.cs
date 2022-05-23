@@ -28,6 +28,7 @@ public static class odeint{
 			}
 		}
 
+		WriteLine("The solution is plotted in \'ode.png\'\n");
 		WriteLine("The solution appears to agree very well");
 		WriteLine("with that given by scipy.integrate.odeint");
 		WriteLine("---------------------------------------------------");

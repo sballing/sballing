@@ -3,6 +3,8 @@ Using the ode.ivp routine from matlib
 to solve the coupled differential equations
 from the scipy.integrate.odeint example
 
+The solution is plotted in 'ode.png'
+
 The solution appears to agree very well
 with that given by scipy.integrate.odeint
 ---------------------------------------------------
