@@ -1,4 +1,5 @@
 using static vec;
+using static System.Console;
 public class main{
 	static void Main() {
 		// Test the approx method
@@ -14,19 +15,21 @@ public class main{
 		vec j = new vec(1-1e-5, 1-1e-5, 1-1e-5);
 		vec k = new vec(1-1e-9, 1-1e-9, 1-1e-9);
 		vec l = new vec(1-1e-8, 1-1e-8, 1-1e-8);
-		System.Console.WriteLine("");
-		System.Console.WriteLine("Testing the approx method");
-		System.Console.WriteLine($"{a.ToString()} == {b.ToString()}: {approx(a,b)}");
-		System.Console.WriteLine($"{a.ToString()} == {c.ToString()}: {approx(a,c)}");
-		System.Console.WriteLine($"{c.ToString()} == {d.ToString()}: {approx(c,d)}");
-		System.Console.WriteLine($"{c.ToString()} == {e.ToString()}: {approx(c,e)}");
-		System.Console.WriteLine($"{c.ToString()} == {f.ToString()}: {approx(c,f)}");
-		System.Console.WriteLine($"{c.ToString()} == {g.ToString()}: {approx(c,g)}");
-		System.Console.WriteLine($"{c.ToString()} == {h.ToString()}: {approx(c,h)}");
-		System.Console.WriteLine($"{c.ToString()} == {i.ToString()}: {approx(c,i)}");
-		System.Console.WriteLine($"{c.ToString()} == {j.ToString()}: {approx(c,j)}");
-		System.Console.WriteLine($"{c.ToString()} == {k.ToString()}: {approx(c,k)}");
-		System.Console.WriteLine($"{c.ToString()} == {l.ToString()}: {approx(c,l)}");
-		System.Console.WriteLine($"The result of all tests fits with the criteria of the approx method!");
+		WriteLine("------------------------------------------------------------");
+		WriteLine("It is a bit unclear, what is meant by extensive testing.");
+		WriteLine("However, here I attempt to test limiting cases of the approx method\n");
+		WriteLine($"{a.ToString()} == {b.ToString()}: {approx(a,b)}");
+		WriteLine($"{a.ToString()} == {c.ToString()}: {approx(a,c)}");
+		WriteLine($"{c.ToString()} == {d.ToString()}: {approx(c,d)}");
+		WriteLine($"{c.ToString()} == {e.ToString()}: {approx(c,e)}");
+		WriteLine($"{c.ToString()} == {f.ToString()}: {approx(c,f)}");
+		WriteLine($"{c.ToString()} == {g.ToString()}: {approx(c,g)}");
+		WriteLine($"{c.ToString()} == {h.ToString()}: {approx(c,h)}");
+		WriteLine($"{c.ToString()} == {i.ToString()}: {approx(c,i)}");
+		WriteLine($"{c.ToString()} == {j.ToString()}: {approx(c,j)}");
+		WriteLine($"{c.ToString()} == {k.ToString()}: {approx(c,k)}");
+		WriteLine($"{c.ToString()} == {l.ToString()}: {approx(c,l)}");
+		WriteLine($"\nThe result of all tests fits with the criteria of the approx method!");
+		WriteLine("------------------------------------------------------------");
 	}
 }

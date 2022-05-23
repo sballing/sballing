@@ -1,5 +1,7 @@
+------------------------------------------------------------
+It is a bit unclear, what is meant by extensive testing.
+However, here I attempt to test limiting cases of the approx method
 
-Testing the approx method
 vec[(0, 0, 0)] == vec[(0, 0, 0)]: True
 vec[(0, 0, 0)] == vec[(1, 1, 1)]: False
 vec[(1, 1, 1)] == vec[(1, 1, 1)]: True
@@ -11,4 +13,6 @@ vec[(1, 1, 1)] == vec[(0.9999999999, 0.9999999999, 0.9999999999)]: True
 vec[(1, 1, 1)] == vec[(0.99999, 0.99999, 0.99999)]: False
 vec[(1, 1, 1)] == vec[(0.999999999, 0.999999999, 0.999999999)]: True
 vec[(1, 1, 1)] == vec[(0.99999999, 0.99999999, 0.99999999)]: False
+
 The result of all tests fits with the criteria of the approx method!
+------------------------------------------------------------
