@@ -19,6 +19,7 @@ public class main{
 		matrix D = A.copy(); // Keeping the eigenvalues
 
 
+		WriteLine("Throughout this homework, the approx method from the matrix class is used to validate the results.");
 		WriteLine("----------------------------------------------");
 		WriteLine("Generating random symmetric matrix A:");
 		A.print();
