@@ -1,4 +1,7 @@
 --------------------------------------
 Solving the ODE from SciPy
-The result is plotted in figure ode_test.png
+The result is plotted in 'ode_test.png' in this repository
+
+Note that the solution is written to standard error, since 
+storing the solution in genlists is to be done in exercise B
 --------------------------------------
