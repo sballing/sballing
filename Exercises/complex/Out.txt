@@ -1,7 +1,10 @@
-sqrt(-1) = 6.12e-17+1i
-sqrt(i) = 0.707+0.707i
-e^i = 0.54+0.841i
-e^i*pi = -1+1.22e-16i
-i^i = 0.208+0i
-ln(i) = 0+1.57i
-sin(i*pi) = 0+11.5i
+-------------------------------------------------
+Testing the cmath class on some examples:
+sqrt(-1) = 6.12e-17+1i (should be 0 + 1i)
+sqrt(i) = 0.707+0.707i (should be 0.7071 + 0i)
+e^i = 0.54+0.841i (should be 0.5403 + 0.8415i)
+e^i*pi = -1+1.22e-16i (should be -1 + 0i)
+i^i = 0.208+0i (should be 0.2079 + 0i)
+ln(i) = 0+1.57i (should be 0 + 1.5708i)
+sin(i*pi) = 0+11.5i (should be 0 + 11.55i)
+-------------------------------------------------

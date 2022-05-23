@@ -5,12 +5,15 @@ using static complex;
 public class main {
 	static void Main(){
 		complex minusOne = new complex(-1,0);
-		WriteLine($"sqrt(-1) = {cmath.sqrt(minusOne)}");
-		WriteLine($"sqrt(i) = {cmath.sqrt(cmath.I)}");
-		WriteLine($"e^i = {cmath.exp(cmath.I)}");
-		WriteLine($"e^i*pi = {cmath.exp(cmath.I*System.Math.PI)}");
-		WriteLine($"i^i = {cmath.pow(cmath.I, cmath.I)}");
-		WriteLine($"ln(i) = {cmath.log(cmath.I)}");
-		WriteLine($"sin(i*pi) = {cmath.sin(cmath.I*System.Math.PI)}");
+		WriteLine("-------------------------------------------------");
+		WriteLine("Testing the cmath class on some examples:");
+		WriteLine($"sqrt(-1) = {cmath.sqrt(minusOne)} (should be 0 + 1i)");
+		WriteLine($"sqrt(i) = {cmath.sqrt(cmath.I)} (should be 0.7071 + 0i)");
+		WriteLine($"e^i = {cmath.exp(cmath.I)} (should be 0.5403 + 0.8415i)");
+		WriteLine($"e^i*pi = {cmath.exp(cmath.I*System.Math.PI)} (should be -1 + 0i)");
+		WriteLine($"i^i = {cmath.pow(cmath.I, cmath.I)} (should be 0.2079 + 0i)");
+		WriteLine($"ln(i) = {cmath.log(cmath.I)} (should be 0 + 1.5708i)");
+		WriteLine($"sin(i*pi) = {cmath.sin(cmath.I*System.Math.PI)} (should be 0 + 11.55i)");
+		WriteLine("-------------------------------------------------");
 	}
 }

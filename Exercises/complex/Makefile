@@ -4,14 +4,14 @@ all: Out.txt
 Out.txt: main.exe
 	mono main.exe > Out.txt
 
-main.exe: main.cs cmath.dll
-	mcs -target:exe -reference:cmath.dll -out:$@ $<
+main.exe: main.cs cmath.dll complex.dll
+	mcs $< -target:exe -reference:cmath.dll,complex.dll
 
-CMATHDIR = ./
-cmath.dll : $(CMATHDIR)/cmath.cs $(CMATHDIR)/complex.cs
-	mcs -target:library -out:./cmath.dll $^ # note "./" in front of cmath.dll
+cmath.dll: cmath.cs complex.dll
+	mcs $< -target:library -reference:complex.dll
+
+complex.dll: complex.cs
+	mcs $< -target:library
 
 clean:
-	rm -f Out.txt main.exe cmath.dll
-
-
+	rm -f *.txt *.exe *.dll
