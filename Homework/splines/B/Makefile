@@ -1,4 +1,7 @@
-qspline.png: qspline.pyxplot.gpi out.txt
+all: out.txt qspline.png
+	cat $<
+
+qspline.png: qspline.pyxplot.gpi out.txt qinterp.txt
 	pyxplot $<
 
 out.txt: main.exe
@@ -11,4 +14,4 @@ qspline.dll: qspline.cs
 	mcs $< -target:library
 
 clean:
-	rm -r *.exe *.dll out.txt *.png
+	rm -r *.exe *.dll *.txt *.png
