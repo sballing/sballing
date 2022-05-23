@@ -3,14 +3,22 @@ using static System.Console;
 using static System.Math;
 public class main {
 	public static void Main(){
-		for(double i=-5.1; i<=5.1; i+=1.0/8){
-			for(double j=-5.1; j<=5.1; j+=1.0/8){
-				complex z = new complex(i,j);
-				complex gamma = G(z);
-				double absgamma = cmath.abs(gamma);
-				WriteLine($"{z.Re} {z.Im} {absgamma}");
+		WriteLine("-----------------------------------------------------------------");
+		WriteLine("Computing and plotting the complex gamma function in a complex space");
+		WriteLine("The plot is illustrated using PyxPlot's \'plot 3d\'");
+
+		using(var outfile = new System.IO.StreamWriter("cgamma.txt")){
+			for(double i=-5.1; i<=5.1; i+=1.0/8){
+				for(double j=-5.1; j<=5.1; j+=1.0/8){
+					complex z = new complex(i,j);
+					complex gamma = G(z);
+					double absgamma = cmath.abs(gamma);
+					outfile.WriteLine($"{z.Re} {z.Im} {absgamma}");
+				}
 			}
 		}
+		WriteLine("The resulting plot can be seen in \'cgamma.png\'");
+		WriteLine("-----------------------------------------------------------------");
 	}
 
 	public static complex G(complex z){

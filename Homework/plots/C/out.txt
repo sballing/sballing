@@ -1,0 +1,5 @@
+-----------------------------------------------------------------
+Computing and plotting the complex gamma function in a complex space
+The plot is illustrated using PyxPlot's 'plot 3d'
+The resulting plot can be seen in 'cgamma.png'
+-----------------------------------------------------------------

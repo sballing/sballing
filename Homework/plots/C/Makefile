@@ -1,4 +1,7 @@
-cgamma.pyxplot.png: out.cgamma.txt
+all: out.txt cgamma.png
+	cat $<
+
+cgamma.png: cgamma.txt
 	echo '\
 	set terminal png ;\
 	set output "$@" ;\
@@ -11,15 +14,11 @@ cgamma.pyxplot.png: out.cgamma.txt
 	plot 3d "$<" index 0 using 2:1:3 with surface col black fillcol green title "abs[$$\Gamma$$($$z$$)]" ;\
 	' | tee log.pyx.gpi | pyxplot
 
-out.cgamma.txt: main.exe
+out.txt: main.exe
 	mono $< > $@
 
 main.exe: main.cs cmath.dll
 	mcs $< -target:exe -reference:cmath.dll
 
-CMATHDIR = /mnt/c/Users/soere/sballing/Exercises/complex
-cmath.dll: $(CMATHDIR)/cmath.cs $(CMATHDIR)/complex.cs
-	mcs -target:library -out:./cmath.dll $^
-
 clean:
-	rm -r *.png log* [Oo]ut* *.exe *.dll
+	rm -r *.png log* *.txt *.exe
