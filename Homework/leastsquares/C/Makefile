@@ -1,6 +1,5 @@
-all: out.txt
+all: out.txt best_fit_pm.png
 	cat $<
-	make best_fit_pm.png
 
 best_fit_pm.png: lsfit_pyxplot.gpi data_points.txt best_fit_pm.txt
 	pyxplot $<

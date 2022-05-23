@@ -47,7 +47,7 @@ public class main{
 		WriteLine("----------------------------------------------");
 		WriteLine("A plot of the experimental data alongside a fit is made");
 		WriteLine("The uncertainty of the fit parameters is also illustrated");
-		WriteLine("This can be seen in this directory as best_fit_pm.png");
+		WriteLine("This can be seen in this directory as \'best_fit_pm.png\'");
 		WriteLine("----------------------------------------------");
 	}
 }
