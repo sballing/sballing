@@ -1,6 +1,5 @@
-all: out.txt
+all: out.txt figure8.png
 	cat out.txt
-	make figure8.png
 
 figure8.png: figure8_pyxplot.gpi solution.txt
 	pyxplot $<

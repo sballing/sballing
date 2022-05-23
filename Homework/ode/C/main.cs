@@ -7,7 +7,7 @@ public class main{
 		WriteLine("Solving the 3-body gravitational problem using the implemented ODE-solver");
 		WriteLine("Initial values for the stable figure 8 solution was found at:");
 		WriteLine("http://www.artcompsci.org/msa/web/vol_1/v1_web/node45.html");
-		WriteLine("The result is plotted in figure figure8.png");
+		WriteLine("The result is plotted in figure \'figure8.png\'");
 		WriteLine("--------------------------------------");
 
 		Func<double,vector,vector> f = delegate(double t, vector y){
