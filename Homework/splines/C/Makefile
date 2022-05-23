@@ -1,4 +1,7 @@
-cspline.png: cspline.pyxplot.gpi out.txt
+all: out.txt cspline.png
+	cat $<
+
+cspline.png: cspline.pyxplot.gpi cinterp.txt
 	pyxplot $<
 
 out.txt: main.exe
