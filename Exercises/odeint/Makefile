@@ -1,9 +1,10 @@
-all: ode.png
+all: out.txt ode.png
+	cat $<
 
-ode.png: Out.txt odeint.pyxplot.gpi
-	pyxplot odeint.pyxplot.gpi
+ode.png: odeint.pyxplot.gpi out.txt
+	pyxplot $<
 
-Out.txt: main.exe
+out.txt: main.exe
 	mono $< > $@
 
 main.exe: main.cs matlib.dll
