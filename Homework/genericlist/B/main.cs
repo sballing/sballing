@@ -6,8 +6,8 @@ public class main{
 			Error.WriteLine("Need only one argument, i.e. the name of the file");
 			return 1;
 		}
-
-		WriteLine("Testing the new push functionality on the same list");
+		WriteLine("-------------------------------------------------");
+		WriteLine("Testing the new push functionality on the input file");
 		WriteLine();
 		var reader = new System.IO.StreamReader(args[0]);
 
@@ -28,6 +28,7 @@ public class main{
         }
 
         WriteLine();
+        WriteLine("-------------------------------------------------");
         WriteLine("Testing the remove method on a genlist of integers");
         WriteLine();
         var list2 = new genlist<int>();
@@ -43,11 +44,12 @@ public class main{
 			WriteLine($"{list2.data[i]}");
 		}
 		WriteLine();
-		WriteLine("Removing element 4 and printing again");
+		WriteLine("Removing element 4 (C# has 0-indexing) and printing again");
 		list2.remove(4);
         for(int i=0;i<list2.data.Length-1;i++) {
 			WriteLine($"{list2.data[i]}");
 		}
+		WriteLine("-------------------------------------------------");
 
         return 0;
 	}
