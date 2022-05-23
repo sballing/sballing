@@ -8,7 +8,6 @@ public class main{
 
 	public static void harm(object obj) {
 		data d = (data) obj; //Cast generic object type as data
-		WriteLine($"Harm: Sum from {d.a} to {d.b}");
 		d.sum = 0; 
 		for(int i = d.a; i < d.b; i++) {
 			d.sum += 1.0/i;
@@ -18,6 +17,8 @@ public class main{
 	}
 
 	public static void Main(string[] args) {
+		WriteLine("--------------------------------------------");
+		WriteLine("Calculating the harmonic sum by splitting the work load between two processors\n");
 		int N = (int) 1e8;
 		if(args.Length>0) { N = (int)double.Parse(args[0]); }
 		WriteLine($"N = {(float)N}");
@@ -36,5 +37,6 @@ public class main{
 		t2.Join();
 
 		WriteLine($"Harmonic sum from {x.a} to {N} = {x.sum + y.sum}");
+		WriteLine("--------------------------------------------");
 	}
 }
