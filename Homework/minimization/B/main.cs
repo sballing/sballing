@@ -25,7 +25,7 @@ public class main{
 	}
 
 	public static void Main(){
-		WriteLine("---------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 		WriteLine("The implemented minimization algorithm is used for investigating the Higgs boson");
 		WriteLine("In particular, the Breit-Wigner function is fitted");
 		WriteLine("This is done by minimizing the chi2 function");
@@ -73,11 +73,11 @@ public class main{
 			}
 		}
 		
-		WriteLine("---------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 
 		WriteLine("The fitted function is plotted alongside the data points");
 		WriteLine("This can be seen in \'higgs.png\'");
-		WriteLine("---------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 
 	}
 

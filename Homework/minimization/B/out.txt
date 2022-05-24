@@ -1,4 +1,4 @@
----------------------------------------------------
+---------------------------------------------------------------------------------------
 The implemented minimization algorithm is used for investigating the Higgs boson
 In particular, the Breit-Wigner function is fitted
 This is done by minimizing the chi2 function
@@ -10,7 +10,7 @@ Using the minimization algorithm, it is found that
 	Amplitude = 9.87625743189838
 
 The minimization was done in 29 steps
----------------------------------------------------
+---------------------------------------------------------------------------------------
 The fitted function is plotted alongside the data points
 This can be seen in 'higgs.png'
----------------------------------------------------
+---------------------------------------------------------------------------------------
