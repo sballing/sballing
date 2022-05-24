@@ -32,7 +32,7 @@ public class main{
 	}
 
 	public static void Main(){
-		WriteLine("------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 		WriteLine("Investigating the lowest energy solution for r_min = 1e-3, r_max = 8\n");	
 		double r_min = 1e-3;
 		double r_max = 8;
@@ -49,7 +49,7 @@ public class main{
 
 		WriteLine("\nThe corresponding radial wavefunction is plotted alongside the analytical solution");
 		WriteLine("These can be seen in file \'hydrogen.png\'");	
-		WriteLine("------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 
 		WriteLine("Investigating the convergence of solution with respect to varying r_min and r_max");
 		using(var outfile = new System.IO.StreamWriter("r_convergence.txt")){
@@ -68,7 +68,7 @@ public class main{
 			}
 		}
 		WriteLine("These convergences are illustrated in \'r_convergence.png\'");
-		WriteLine("------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 
 		WriteLine("Investigating the convergence of solution with respect to varying acc and eps");
 		WriteLine("For this, r_max = 8, r_min = 1e-6");
@@ -98,7 +98,7 @@ public class main{
 		WriteLine("\nIt is interesting to note that the solution does not become better and better with decreasing acc and eps");
 		WriteLine("At low values, the solution exhibits peculiar behavior as expected");
 		WriteLine("There exists some optimal combination of acc and eps in the investigated regime");
-		WriteLine("------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 
 	}
 

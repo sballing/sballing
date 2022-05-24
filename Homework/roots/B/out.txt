@@ -1,4 +1,4 @@
-------------------------------------------------
+---------------------------------------------------------------------------------------
 Investigating the lowest energy solution for r_min = 1e-3, r_max = 8
 
 	The energy is estimated to be -0.500032123687915 Hartree
@@ -6,10 +6,10 @@ Investigating the lowest energy solution for r_min = 1e-3, r_max = 8
 
 The corresponding radial wavefunction is plotted alongside the analytical solution
 These can be seen in file 'hydrogen.png'
-------------------------------------------------
+---------------------------------------------------------------------------------------
 Investigating the convergence of solution with respect to varying r_min and r_max
 These convergences are illustrated in 'r_convergence.png'
-------------------------------------------------
+---------------------------------------------------------------------------------------
 Investigating the convergence of solution with respect to varying acc and eps
 For this, r_max = 8, r_min = 1e-6
 These convergences are illustrated in 'acc_eps_convergence.png'
@@ -17,4 +17,4 @@ These convergences are illustrated in 'acc_eps_convergence.png'
 It is interesting to note that the solution does not become better and better with decreasing acc and eps
 At low values, the solution exhibits peculiar behavior as expected
 There exists some optimal combination of acc and eps in the investigated regime
-------------------------------------------------
+---------------------------------------------------------------------------------------

@@ -1,8 +1,5 @@
-all: out.txt
+all: out.txt hydrogen.png r_convergence.png acc_eps_convergence.png
 	cat $<
-	make hydrogen.png
-	make r_convergence.png
-	make acc_eps_convergence.png
 
 r_convergence.png: r_convergence_pyxplot.gpi r_convergence.txt
 	pyxplot $<
