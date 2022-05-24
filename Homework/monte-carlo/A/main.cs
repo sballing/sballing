@@ -4,7 +4,7 @@ using static System.Math;
 public class main{
 
 	public static void Main(){
-		WriteLine("----------------------------------------------------");
+		WriteLine("-----------------------------------------------------------------------");
 		WriteLine("Testing the implemented Monte-Carlo integrator on some interesting integrals\n");
 
 
@@ -31,7 +31,7 @@ public class main{
 		var res3 = mcint.plainmc(f3, a3, b3, 50000);
 		WriteLine($"\tResult is {res3.Item1} and error is {res3.Item2}");
 		WriteLine("\tResult should be 1.393203");
-		WriteLine("----------------------------------------------------");
+		WriteLine("-----------------------------------------------------------------------");
 
 	}
 
