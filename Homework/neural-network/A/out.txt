@@ -1,4 +1,4 @@
-----------------------------------------------------------
+---------------------------------------------------------------------------------------
 Testing the implemented artificial neural network
 Specifically, the routine is tested with regards to interpolation
 
@@ -7,7 +7,7 @@ The function
 is interpolated
 
 This is done using a gaussian wavelet as the activation function.
-----------------------------------------------------------
+---------------------------------------------------------------------------------------
 The artificial neural network succesfully interpolated the given function g(x)
 The resulting plot can be seen in 'interpolation.png'
-----------------------------------------------------------
+---------------------------------------------------------------------------------------

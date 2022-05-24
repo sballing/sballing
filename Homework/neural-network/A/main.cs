@@ -4,12 +4,12 @@ using static System.Math;
 public class main{
 
 	public static void Main(){
-		WriteLine("----------------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 		WriteLine("Testing the implemented artificial neural network");
 		WriteLine("Specifically, the routine is tested with regards to interpolation");
 		WriteLine("\nThe function\n\tg(x) = Cos(5*x-1)*Exp(-x^2)\nis interpolated");
 		WriteLine("\nThis is done using a gaussian wavelet as the activation function.");
-		WriteLine("----------------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 
 		Func<double,double> act = x => x*Exp(-x*x);
 		Func<double,double> g = x => Cos(5*x - 1)*Exp(-x*x);
@@ -33,7 +33,7 @@ public class main{
 			outfile.WriteLine("\n");
 
 			for(int i=0; i<network.n; i++){ // Filling the initial p-vector
-				network.p[3*i + 0] = a + (b-a)*i/(network.n-1); // Same a the filling x above
+				network.p[3*i + 0] = a + (b-a)*i/(network.n-1); // Same as the filling x above
 				network.p[3*i + 1] = 1; // b_i is set to 1 initially
 				network.p[3*i + 2] = 1; // w_i is set to 1 initially
 			}
@@ -46,7 +46,7 @@ public class main{
 		}
 		WriteLine("The artificial neural network succesfully interpolated the given function g(x)");
 		WriteLine("The resulting plot can be seen in \'interpolation.png\'");
-		WriteLine("----------------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 
 	}
 
