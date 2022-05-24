@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------
-Testing the implementation on a few examples:
+Testing the root finding implementation on a few examples:
 
 Finding extremum of f(x) = log(x)*x^2
 This is done by searching for roots of its gradient f'(x) = 2*x*log(x) + x

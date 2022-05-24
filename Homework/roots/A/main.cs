@@ -5,7 +5,7 @@ public class main{
 
 	public static void Main(){
 		WriteLine("---------------------------------------------------------------------------------------");
-		WriteLine("Testing the implementation on a few examples:");
+		WriteLine("Testing the root finding implementation on a few examples:");
 
 
 		Func<vector,vector> f1 = x => new vector(2*x[0]*Log(x[0])+x[0]);
