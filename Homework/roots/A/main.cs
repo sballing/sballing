@@ -4,7 +4,7 @@ using static System.Math;
 public class main{
 
 	public static void Main(){
-		WriteLine("------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 		WriteLine("Testing the implementation on a few examples:");
 
 
@@ -26,7 +26,7 @@ public class main{
 		WriteLine($"\tx = {res2[0]}, y = {res2[1]}");
 		WriteLine("\tAnalytical result is (1,1)");
 		
-		WriteLine("------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 	}
 
 }
