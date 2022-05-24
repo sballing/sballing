@@ -4,7 +4,8 @@ using static System.Math;
 public class main{
 
 	public static void Main(){
-		WriteLine("------------------------------------");
+		WriteLine("Note that Python packages NumPy and SciPy are required to run this program!");
+		WriteLine("----------------------------------------------------------");
 		WriteLine("Testing the new implementation:");
 		WriteLine("The number of function calls is investigated (ideally minimized)\n");
 
@@ -29,7 +30,7 @@ public class main{
 		WriteLine($"log(x)/sqrt(x) - new implementation: {res22}. It took {l} iterations.\n");
 
 		WriteLine("Hence, the variable transformation results in significantly fewer calls to the function");
-		WriteLine("------------------------------------");
+		WriteLine("----------------------------------------------------------");
 		WriteLine("Testing the Python SciPy routine for comparison:\n");
 		var instream =new System.IO.StreamReader("python_res.txt");
 		for(string line=instream.ReadLine();line!=null;line=instream.ReadLine()){
@@ -38,7 +39,7 @@ public class main{
 		instream.Close();
 		WriteLine();
 		WriteLine("Evidently, the Python routine is somewhere between the original and optimized implementation");
-		WriteLine("------------------------------------");
+		WriteLine("----------------------------------------------------------");
 
 
 	}

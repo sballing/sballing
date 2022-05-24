@@ -1,4 +1,5 @@
-------------------------------------
+Note that Python packages NumPy and SciPy are required to run this program!
+----------------------------------------------------------
 Testing the new implementation:
 The number of function calls is investigated (ideally minimized)
 
@@ -9,11 +10,11 @@ log(x)/sqrt(x) - old implementation: -3.9999521745773. It took 8660 iterations.
 log(x)/sqrt(x) - new implementation: -3.9999234350396. It took 108 iterations.
 
 Hence, the variable transformation results in significantly fewer calls to the function
-------------------------------------
+----------------------------------------------------------
 Testing the Python SciPy routine for comparison:
 
 1/sqrt(x) - Python implementation: 1.9999999999999984. It took 231 iterations.
 log(x)/sqrt(x) - Python implementation: -4.000000000000085. It took 315 iterations.
 
 Evidently, the Python routine is somewhere between the original and optimized implementation
-------------------------------------
+----------------------------------------------------------
