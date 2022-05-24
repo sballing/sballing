@@ -4,11 +4,11 @@ using static System.Math;
 public class main{
 
 	public static void Main(){
-		WriteLine("----------------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 		WriteLine("Now the implementation should support derivative and anti-derivative");
-		WriteLine("This will be tested on the same function as before\n\tCos(5*x-1)*Exp(-x^2)");
+		WriteLine("This will be tested on the same function as before\n\n\tCos(5*x-1)*Exp(-x^2)");
 		WriteLine("\nThis is again done using a gaussian wavelet as the activation function.");
-		WriteLine("----------------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 
 		Func<double,double> act = x => x*Exp(-x*x); // Activation function, gaussian wavelet
 		Func<double,double> act_diff = x => (1 - 2*x*x)*Exp(-x*x); // Its derivative
@@ -34,7 +34,7 @@ public class main{
 			outfile.WriteLine("\n");
 
 			for(int i=0; i<network.n; i++){ // Filling the initial p-vector
-				network.p[3*i + 0] = a + (b-a)*i/(network.n-1); // Same a the filling x above
+				network.p[3*i + 0] = a + (b-a)*i/(network.n-1); // Same as the filling x above
 				network.p[3*i + 1] = 1; // b_i is set to 1 initially
 				network.p[3*i + 2] = 1; // w_i is set to 1 initially
 			}
@@ -48,7 +48,7 @@ public class main{
 		WriteLine("The artificial neural network succesfully interpolated the given function g(x)");
 		WriteLine("Furthermore, the derivative and anti-derivative was determined");
 		WriteLine("The resulting plot can be seen in \'interpolation.png\'");
-		WriteLine("----------------------------------------------------------");
+		WriteLine("---------------------------------------------------------------------------------------");
 
 	}
 
