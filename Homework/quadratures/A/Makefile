@@ -1,6 +1,5 @@
-all: out.txt
+all: out.txt gamma.png
 	cat out.txt
-	make gamma.png
 
 gamma.png: gamma_pyxplot.gpi gamma.txt
 	pyxplot $<
