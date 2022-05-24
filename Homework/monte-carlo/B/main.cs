@@ -4,7 +4,7 @@ using static System.Math;
 public class main{
 
 	public static void Main(){
-		WriteLine("----------------------------------------------------");
+		WriteLine("-----------------------------------------------------------------------");
 		WriteLine("Testing both integrator routines on some interesting integrals\n");
 
 
@@ -37,7 +37,7 @@ public class main{
 		WriteLine($"\tPlain routine gives: {res3_plain.Item1} with error {res3_plain.Item2}");
 		WriteLine($"\tHalton routine gives: {res3_halton.Item1} with error {res3_halton.Item2}");
 		WriteLine("\tResult should be 1.393203");
-		WriteLine("----------------------------------------------------");
+		WriteLine("-----------------------------------------------------------------------");
 
 	}
 
