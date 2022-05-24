@@ -5,7 +5,9 @@ using static System.Double;
 public class main{
 
 	public static void Main(){
-		WriteLine("------------------------------------");
+		WriteLine("Note that Python packages NumPy and SciPy are required to run this program!");
+		WriteLine("----------------------------------------------------------");
+		WriteLine("The integrator now estimates the integration error.");
 		WriteLine("Testing error implementation on the same integrals as earlier:\n");
 
 		double a=0.0, b=1.0;
@@ -24,7 +26,7 @@ public class main{
 		WriteLine($"Int 4*sqrt(1-x^2) from 0 to 1: {res3} with error {err3}");
 		WriteLine($"Int log(x)/sqrt(x) from 0 to 1: {res4} with error {err4}");
 		WriteLine("\nEvidently, the error is lower than the required eps and delta!");
-		WriteLine("------------------------------------");
+		WriteLine("----------------------------------------------------------");
 
 		WriteLine("Testing the implementation on infinite limits:\n");
 		int i = 0, j = 0, k = 0;
@@ -37,10 +39,10 @@ public class main{
 		(double res7, double err7) = integrator.quad(f7, NegativeInfinity, 0);
 
 
-		WriteLine($"Int e^(-x^2) from -inf to inf: {res5} in {i} recursive calls (should be sqrt(pi) = 1.772)");
-		WriteLine($"Int (sin(x)/x)^2 from 0 to inf: {res6} in {j} recursive calls (should be pi/2 = 1.571)");
-		WriteLine($"Int 1/(1+x^2) from -inf to 0: {res7} in {k} recursive calls (should be pi/2 = 1.571)");
-		WriteLine("------------------------------------");
+		WriteLine($"Int e^(-x^2) from -inf to inf: {res5} in {i} recursive calls (should be sqrt(pi) = 1.772...)");
+		WriteLine($"Int (sin(x)/x)^2 from 0 to inf: {res6} in {j} recursive calls (should be pi/2 = 1.571...)");
+		WriteLine($"Int 1/(1+x^2) from -inf to 0: {res7} in {k} recursive calls (should be pi/2 = 1.571...)");
+		WriteLine("----------------------------------------------------------");
 
 		WriteLine("Testing the Python SciPy routine for comparison:\n");
 		var instream =new System.IO.StreamReader("python_res.txt");
@@ -48,7 +50,7 @@ public class main{
         	WriteLine(line);
         }
 		instream.Close();
-		WriteLine("------------------------------------");
+		WriteLine("----------------------------------------------------------");
 
 
 	}
