@@ -1,4 +1,4 @@
-### Examination project 2 - Berrut interpolation
+## Examination project 2 - Berrut interpolation
 
 **Author**: Søren Skovgaard Balling
 
