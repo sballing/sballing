@@ -1,0 +1,26 @@
+set terminal png
+set output "qspline.png"
+set multiplot
+set key below
+set xlabel "$x$"
+set ylabel "$y$"
+set grid
+set title "Test 1: Classic example"
+plot [-1.05:1.05][]\
+	"qspline_interpolation.txt" index 0 using 1:2 with points pointtype 17 title "Data points"\
+	,"qspline_interpolation.txt" index 1 using 1:2 with lines title "Interpolation"
+set origin 10,0
+set title "Test 2: $f(x) = \frac{1}{1 + 25x^2}$"
+plot [-1:1][]\
+	"qspline_interpolation.txt" index 2 using 1:2 with points pointtype 17 title "Data points"\
+	,"qspline_interpolation.txt" index 3 using 1:2 with lines title "Interpolation"
+set origin 0,-8
+set title "Test 3: $f(x) = |x| + \frac{x}{2} - x^2$"
+plot [-1:1][]\
+	"qspline_interpolation.txt" index 4 using 1:2 with points pointtype 17 title "Data points"\
+	,"qspline_interpolation.txt" index 5 using 1:2 with lines title "Interpolation"
+set origin 10,-8
+set title "Test 4: $f(x) = \cos(10x) \cdot e^{-x}$"
+plot [-1:1][]\
+	"qspline_interpolation.txt" index 6 using 1:2 with points pointtype 17 title "Data points"\
+	,"qspline_interpolation.txt" index 7 using 1:2 with lines title "Interpolation"
