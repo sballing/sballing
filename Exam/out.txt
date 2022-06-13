@@ -1,2 +1,1 @@
-HelloWorld1
-HelloWorld2
+For details about the examination project, see the ReadMe-file
