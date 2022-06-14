@@ -63,7 +63,7 @@ public class main{
 		// Test 2
 		using(var outfile = new System.IO.StreamWriter("test2.txt")){
 
-			for(int i=0; i<xs_3.Length; i++){
+			for(int i=0; i<xs_2.Length; i++){
 				outfile.WriteLine($"{xs_2[i]} {ys_2[i]}");
 			}
 
