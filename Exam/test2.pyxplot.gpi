@@ -1,0 +1,11 @@
+set terminal png
+set output "test2.png"
+set key top right
+set xlabel "$x$"
+set ylabel "$y$"
+set grid
+set title "Test 2: $f(x) = \frac{1}{1 + 25x^2}$"
+plot [-1:1][]\
+	"test2.txt" index 0 using 1:2 with points pointtype 17 title "Data points"\
+	,"test2.txt" index 1 using 1:2 with lines title "Berrut"\
+	,"test2.txt" index 2 using 1:2 with lines title "qspline"

@@ -1,0 +1,11 @@
+set terminal png
+set output "test4.png"
+set key top right
+set xlabel "$x$"
+set ylabel "$y$"
+set grid
+set title "Test 4: $f(x) = \cos(10x) \cdot e^{-x}$"
+plot [-1:1][-2.5:2.9]\
+	"test4.txt" index 0 using 1:2 with points pointtype 17 title "Data points"\
+	,"test4.txt" index 1 using 1:2 with lines title "Berrut"\
+	,"test4.txt" index 2 using 1:2 with lines title "qspline"

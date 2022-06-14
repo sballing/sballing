@@ -1,0 +1,11 @@
+set terminal png
+set output "test3.png"
+set key bottom right
+set xlabel "$x$"
+set ylabel "$y$"
+set grid
+set title "Test 3: $f(x) = |x| + \frac{x}{2} - x^2$"
+plot [-1:1][]\
+	"test3.txt" index 0 using 1:2 with points pointtype 17 title "Data points"\
+	,"test3.txt" index 1 using 1:2 with lines title "Berrut"\
+	,"test3.txt" index 2 using 1:2 with lines title "qspline"
