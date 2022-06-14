@@ -4,7 +4,7 @@
 Søren Skovgaard Balling
 
 **Student number**:   
-$$201807548 \rightarrow 48 \% 23 = 2$$
+201807548 $$\rightarrow 48 \% 23$$ = 2
 
 **AU-mail**:    
 201807548@post.au.dk
